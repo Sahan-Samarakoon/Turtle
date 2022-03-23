@@ -5,17 +5,17 @@ canvas.pack()
 mj = canvas.create_polygon(10, 10, 40, 30, 10, 50)
 
 def moving_triangle(event):
-    if event.keysym == 'W':
+    if event.keysym == 'w':
         canvas.move(mj, 0, -3)
-    elif event.keysym == 'S':
+    elif event.keysym == 's':
         canvas.move(mj, 0, 3)
-    elif event.keysym == 'A':
+    elif event.keysym == 'a':
         canvas.move(mj, -3, 0)
     else:
         canvas.move(mj, 3, 0)
 
-canvas.bind_all('<KeyPress-S>', moving_triangle)
-canvas.bind_all('<KeyPress-W>', moving_triangle)
-canvas.bind_all('<KeyPress-A>', moving_triangle)
-canvas.bind_all('<KeyPress-D>', moving_triangle)
+canvas.bind_all('<KeyPress-s>', moving_triangle)
+canvas.bind_all('<KeyPress-w>', moving_triangle)
+canvas.bind_all('<KeyPress-a>', moving_triangle)
+canvas.bind_all('<KeyPress-d>', moving_triangle)
 
